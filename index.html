@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Chloe combat</title>
+</head>
+<style>
+	body {
+		margin: 0;
+	}
+	.img {
+		width: 100%;
+		height: 100vh;
+		background-image: url(les.png);
+		background-size: 100%;
+		text-align: center;
+		padding-top: 300px;
+	}
+	.hhh {
+		background-image: url(hloia.png);
+		height: 200px;
+		width: 200px;
+		background-size: 200px;
+		margin-top: 75px;
+	}
+	.ddd {
+		color: #8A2BE2;
+		font-family: fantasy;
+	}
+</style>
+<body>
+	
+	<div class="img body">
+		<h1 class="ddd">сколько робуксов даст тебе Хлоя: <span class="score"></span></h1>
+		<button class="hhh"></button>
+	</div>
+	<script type="text/javascript">
+	let score = 0
+	document.querySelector(".score").innerHTML = score
+	document.querySelector(".hhh").onclick = function () {
+		score = score + 1
+		document.querySelector(".score").innerHTML = score
+	} 
+</script>
+</body>
+</html>
